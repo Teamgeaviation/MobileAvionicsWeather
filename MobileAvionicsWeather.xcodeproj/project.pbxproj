@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A725709B14DA18A20042C8F0 /* weatherParse.m in Sources */ = {isa = PBXBuildFile; fileRef = A725709A14DA18A20042C8F0 /* weatherParse.m */; };
+		A78FCDD614D9C28800D5CCE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD514D9C28800D5CCE3 /* UIKit.framework */; };
+		A78FCDD814D9C28800D5CCE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD714D9C28800D5CCE3 /* Foundation.framework */; };
+		A78FCDDA14D9C28800D5CCE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD914D9C28800D5CCE3 /* CoreGraphics.framework */; };
+		A78FCDE014D9C28800D5CCE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A78FCDDE14D9C28800D5CCE3 /* InfoPlist.strings */; };
+		A78FCDE214D9C28800D5CCE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCDE114D9C28800D5CCE3 /* main.m */; };
+		A78FCDE614D9C28800D5CCE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCDE514D9C28800D5CCE3 /* AppDelegate.m */; };
+		A78FCDE914D9C28800D5CCE3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78FCDE714D9C28800D5CCE3 /* MainStoryboard.storyboard */; };
+		A78FCDEC14D9C28800D5CCE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCDEB14D9C28800D5CCE3 /* ViewController.m */; };
+		A78FCDF414D9C28900D5CCE3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDF314D9C28900D5CCE3 /* SenTestingKit.framework */; };
+		A78FCDF514D9C28900D5CCE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD514D9C28800D5CCE3 /* UIKit.framework */; };
+		A78FCDF614D9C28900D5CCE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD714D9C28800D5CCE3 /* Foundation.framework */; };
+		A78FCDFE14D9C28900D5CCE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A78FCDFC14D9C28900D5CCE3 /* InfoPlist.strings */; };
+		A78FCE0114D9C28900D5CCE3 /* MobileAvionicsWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE0014D9C28900D5CCE3 /* MobileAvionicsWeatherTests.m */; };
+		A78FCE0C14D9C2F900D5CCE3 /* GpsData.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE0B14D9C2F900D5CCE3 /* GpsData.m */; };
+		A78FCE0E14D9CB0C00D5CCE3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCE0D14D9CB0C00D5CCE3 /* CoreLocation.framework */; };
+		A78FCE1114D9E44300D5CCE3 /* RestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE1014D9E44300D5CCE3 /* RestRequest.m */; };
+		A78FCE1E14DA12D200D5CCE3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE1D14DA12D200D5CCE3 /* Reachability.m */; };
+		A78FCE7114DA12EB00D5CCE3 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2014DA12EB00D5CCE3 /* ASIAuthenticationDialog.m */; };
+		A78FCE7214DA12EB00D5CCE3 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2314DA12EB00D5CCE3 /* ASIDataCompressor.m */; };
+		A78FCE7314DA12EB00D5CCE3 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2514DA12EB00D5CCE3 /* ASIDataDecompressor.m */; };
+		A78FCE7414DA12EB00D5CCE3 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2714DA12EB00D5CCE3 /* ASIDownloadCache.m */; };
+		A78FCE7514DA12EB00D5CCE3 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2914DA12EB00D5CCE3 /* ASIFormDataRequest.m */; };
+		A78FCE7614DA12EB00D5CCE3 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2B14DA12EB00D5CCE3 /* ASIHTTPRequest.m */; };
+		A78FCE7714DA12EB00D5CCE3 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE2F14DA12EB00D5CCE3 /* ASIInputStream.m */; };
+		A78FCE7814DA12EB00D5CCE3 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE3114DA12EB00D5CCE3 /* ASINetworkQueue.m */; };
+		A78FCE7A14DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE3814DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.m */; };
+		A78FCE7B14DA12EB00D5CCE3 /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE3A14DA12EB00D5CCE3 /* ASICloudFilesContainer.m */; };
+		A78FCE7C14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE3C14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.m */; };
+		A78FCE7D14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE3E14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.m */; };
+		A78FCE7E14DA12EB00D5CCE3 /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4014DA12EB00D5CCE3 /* ASICloudFilesObject.m */; };
+		A78FCE7F14DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4214DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.m */; };
+		A78FCE8014DA12EB00D5CCE3 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4414DA12EB00D5CCE3 /* ASICloudFilesRequest.m */; };
+		A78FCE8114DA12EB00D5CCE3 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4814DA12EB00D5CCE3 /* ASIS3Bucket.m */; };
+		A78FCE8214DA12EB00D5CCE3 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4A14DA12EB00D5CCE3 /* ASIS3BucketObject.m */; };
+		A78FCE8314DA12EB00D5CCE3 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4C14DA12EB00D5CCE3 /* ASIS3BucketRequest.m */; };
+		A78FCE8414DA12EB00D5CCE3 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE4E14DA12EB00D5CCE3 /* ASIS3ObjectRequest.m */; };
+		A78FCE8514DA12EB00D5CCE3 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE5014DA12EB00D5CCE3 /* ASIS3Request.m */; };
+		A78FCE8614DA12EB00D5CCE3 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FCE5214DA12EB00D5CCE3 /* ASIS3ServiceRequest.m */; };
+		A78FCE9714DA142A00D5CCE3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCE9614DA142A00D5CCE3 /* CFNetwork.framework */; };
+		A78FCE9914DA143500D5CCE3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCE9814DA143500D5CCE3 /* MobileCoreServices.framework */; };
+		A78FCE9B14DA144A00D5CCE3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCE9A14DA144A00D5CCE3 /* libz.dylib */; };
+		A78FCE9F14DA14F000D5CCE3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCE9E14DA14F000D5CCE3 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A78FCDF714D9C28900D5CCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A78FCDC814D9C28800D5CCE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A78FCDD014D9C28800D5CCE3;
+			remoteInfo = MobileAvionicsWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A725709914DA18A20042C8F0 /* weatherParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weatherParse.h; sourceTree = "<group>"; };
+		A725709A14DA18A20042C8F0 /* weatherParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weatherParse.m; sourceTree = "<group>"; };
+		A78FCDD114D9C28800D5CCE3 /* MobileAvionicsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAvionicsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78FCDD514D9C28800D5CCE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A78FCDD714D9C28800D5CCE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A78FCDD914D9C28800D5CCE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A78FCDDD14D9C28800D5CCE3 /* MobileAvionicsWeather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileAvionicsWeather-Info.plist"; sourceTree = "<group>"; };
+		A78FCDDF14D9C28800D5CCE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A78FCDE114D9C28800D5CCE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A78FCDE314D9C28800D5CCE3 /* MobileAvionicsWeather-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileAvionicsWeather-Prefix.pch"; sourceTree = "<group>"; };
+		A78FCDE414D9C28800D5CCE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A78FCDE514D9C28800D5CCE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A78FCDE814D9C28800D5CCE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A78FCDEA14D9C28800D5CCE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A78FCDEB14D9C28800D5CCE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A78FCDF214D9C28900D5CCE3 /* MobileAvionicsWeatherTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAvionicsWeatherTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78FCDF314D9C28900D5CCE3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A78FCDFB14D9C28900D5CCE3 /* MobileAvionicsWeatherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileAvionicsWeatherTests-Info.plist"; sourceTree = "<group>"; };
+		A78FCDFD14D9C28900D5CCE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A78FCDFF14D9C28900D5CCE3 /* MobileAvionicsWeatherTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileAvionicsWeatherTests.h; sourceTree = "<group>"; };
+		A78FCE0014D9C28900D5CCE3 /* MobileAvionicsWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileAvionicsWeatherTests.m; sourceTree = "<group>"; };
+		A78FCE0B14D9C2F900D5CCE3 /* GpsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GpsData.m; path = classes/GpsData.m; sourceTree = "<group>"; };
+		A78FCE0D14D9CB0C00D5CCE3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A78FCE0F14D9E44300D5CCE3 /* RestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestRequest.h; sourceTree = "<group>"; };
+		A78FCE1014D9E44300D5CCE3 /* RestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestRequest.m; sourceTree = "<group>"; };
+		A78FCE1914D9F5D400D5CCE3 /* GpsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpsData.h; sourceTree = "<group>"; };
+		A78FCE1C14DA12D200D5CCE3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A78FCE1D14DA12D200D5CCE3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A78FCE1F14DA12EB00D5CCE3 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		A78FCE2014DA12EB00D5CCE3 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		A78FCE2114DA12EB00D5CCE3 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		A78FCE2214DA12EB00D5CCE3 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		A78FCE2314DA12EB00D5CCE3 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		A78FCE2414DA12EB00D5CCE3 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		A78FCE2514DA12EB00D5CCE3 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		A78FCE2614DA12EB00D5CCE3 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		A78FCE2714DA12EB00D5CCE3 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		A78FCE2814DA12EB00D5CCE3 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		A78FCE2914DA12EB00D5CCE3 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		A78FCE2A14DA12EB00D5CCE3 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		A78FCE2B14DA12EB00D5CCE3 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		A78FCE2C14DA12EB00D5CCE3 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		A78FCE2D14DA12EB00D5CCE3 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		A78FCE2E14DA12EB00D5CCE3 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		A78FCE2F14DA12EB00D5CCE3 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		A78FCE3014DA12EB00D5CCE3 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		A78FCE3114DA12EB00D5CCE3 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		A78FCE3214DA12EB00D5CCE3 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		A78FCE3714DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesCDNRequest.h; sourceTree = "<group>"; };
+		A78FCE3814DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesCDNRequest.m; sourceTree = "<group>"; };
+		A78FCE3914DA12EB00D5CCE3 /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainer.h; sourceTree = "<group>"; };
+		A78FCE3A14DA12EB00D5CCE3 /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainer.m; sourceTree = "<group>"; };
+		A78FCE3B14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainerRequest.h; sourceTree = "<group>"; };
+		A78FCE3C14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainerRequest.m; sourceTree = "<group>"; };
+		A78FCE3D14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainerXMLParserDelegate.h; sourceTree = "<group>"; };
+		A78FCE3E14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainerXMLParserDelegate.m; sourceTree = "<group>"; };
+		A78FCE3F14DA12EB00D5CCE3 /* ASICloudFilesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesObject.h; sourceTree = "<group>"; };
+		A78FCE4014DA12EB00D5CCE3 /* ASICloudFilesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesObject.m; sourceTree = "<group>"; };
+		A78FCE4114DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesObjectRequest.h; sourceTree = "<group>"; };
+		A78FCE4214DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesObjectRequest.m; sourceTree = "<group>"; };
+		A78FCE4314DA12EB00D5CCE3 /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesRequest.h; sourceTree = "<group>"; };
+		A78FCE4414DA12EB00D5CCE3 /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesRequest.m; sourceTree = "<group>"; };
+		A78FCE4614DA12EB00D5CCE3 /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINSXMLParserCompat.h; sourceTree = "<group>"; };
+		A78FCE4714DA12EB00D5CCE3 /* ASIS3Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3Bucket.h; sourceTree = "<group>"; };
+		A78FCE4814DA12EB00D5CCE3 /* ASIS3Bucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Bucket.m; sourceTree = "<group>"; };
+		A78FCE4914DA12EB00D5CCE3 /* ASIS3BucketObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3BucketObject.h; sourceTree = "<group>"; };
+		A78FCE4A14DA12EB00D5CCE3 /* ASIS3BucketObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3BucketObject.m; sourceTree = "<group>"; };
+		A78FCE4B14DA12EB00D5CCE3 /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3BucketRequest.h; sourceTree = "<group>"; };
+		A78FCE4C14DA12EB00D5CCE3 /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3BucketRequest.m; sourceTree = "<group>"; };
+		A78FCE4D14DA12EB00D5CCE3 /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ObjectRequest.h; sourceTree = "<group>"; };
+		A78FCE4E14DA12EB00D5CCE3 /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ObjectRequest.m; sourceTree = "<group>"; };
+		A78FCE4F14DA12EB00D5CCE3 /* ASIS3Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3Request.h; sourceTree = "<group>"; };
+		A78FCE5014DA12EB00D5CCE3 /* ASIS3Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Request.m; sourceTree = "<group>"; };
+		A78FCE5114DA12EB00D5CCE3 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ServiceRequest.h; sourceTree = "<group>"; };
+		A78FCE5214DA12EB00D5CCE3 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
+		A78FCE9614DA142A00D5CCE3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A78FCE9814DA143500D5CCE3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A78FCE9A14DA144A00D5CCE3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A78FCE9E14DA14F000D5CCE3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A78FCDCE14D9C28800D5CCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78FCE9F14DA14F000D5CCE3 /* SystemConfiguration.framework in Frameworks */,
+				A78FCE9B14DA144A00D5CCE3 /* libz.dylib in Frameworks */,
+				A78FCDDA14D9C28800D5CCE3 /* CoreGraphics.framework in Frameworks */,
+				A78FCE9914DA143500D5CCE3 /* MobileCoreServices.framework in Frameworks */,
+				A78FCE9714DA142A00D5CCE3 /* CFNetwork.framework in Frameworks */,
+				A78FCE0E14D9CB0C00D5CCE3 /* CoreLocation.framework in Frameworks */,
+				A78FCDD614D9C28800D5CCE3 /* UIKit.framework in Frameworks */,
+				A78FCDD814D9C28800D5CCE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78FCDEE14D9C28900D5CCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78FCDF414D9C28900D5CCE3 /* SenTestingKit.framework in Frameworks */,
+				A78FCDF514D9C28900D5CCE3 /* UIKit.framework in Frameworks */,
+				A78FCDF614D9C28900D5CCE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A78FCDC614D9C28800D5CCE3 = {
+			isa = PBXGroup;
+			children = (
+				A78FCE9E14DA14F000D5CCE3 /* SystemConfiguration.framework */,
+				A78FCE9A14DA144A00D5CCE3 /* libz.dylib */,
+				A78FCE9814DA143500D5CCE3 /* MobileCoreServices.framework */,
+				A78FCE9614DA142A00D5CCE3 /* CFNetwork.framework */,
+				A78FCE0D14D9CB0C00D5CCE3 /* CoreLocation.framework */,
+				A78FCDDB14D9C28800D5CCE3 /* MobileAvionicsWeather */,
+				A78FCDF914D9C28900D5CCE3 /* MobileAvionicsWeatherTests */,
+				A78FCDD414D9C28800D5CCE3 /* Frameworks */,
+				A78FCDD214D9C28800D5CCE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A78FCDD214D9C28800D5CCE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCDD114D9C28800D5CCE3 /* MobileAvionicsWeather.app */,
+				A78FCDF214D9C28900D5CCE3 /* MobileAvionicsWeatherTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A78FCDD414D9C28800D5CCE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCDD514D9C28800D5CCE3 /* UIKit.framework */,
+				A78FCDD714D9C28800D5CCE3 /* Foundation.framework */,
+				A78FCDD914D9C28800D5CCE3 /* CoreGraphics.framework */,
+				A78FCDF314D9C28900D5CCE3 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A78FCDDB14D9C28800D5CCE3 /* MobileAvionicsWeather */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCDE414D9C28800D5CCE3 /* AppDelegate.h */,
+				A78FCDE514D9C28800D5CCE3 /* AppDelegate.m */,
+				A78FCDE714D9C28800D5CCE3 /* MainStoryboard.storyboard */,
+				A78FCDEA14D9C28800D5CCE3 /* ViewController.h */,
+				A78FCDEB14D9C28800D5CCE3 /* ViewController.m */,
+				A725709914DA18A20042C8F0 /* weatherParse.h */,
+				A725709A14DA18A20042C8F0 /* weatherParse.m */,
+				A78FCE0F14D9E44300D5CCE3 /* RestRequest.h */,
+				A78FCE1014D9E44300D5CCE3 /* RestRequest.m */,
+				A78FCE1914D9F5D400D5CCE3 /* GpsData.h */,
+				A78FCE0B14D9C2F900D5CCE3 /* GpsData.m */,
+				A78FCDDC14D9C28800D5CCE3 /* Supporting Files */,
+			);
+			path = MobileAvionicsWeather;
+			sourceTree = "<group>";
+		};
+		A78FCDDC14D9C28800D5CCE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCE1F14DA12EB00D5CCE3 /* ASIAuthenticationDialog.h */,
+				A78FCE2014DA12EB00D5CCE3 /* ASIAuthenticationDialog.m */,
+				A78FCE1C14DA12D200D5CCE3 /* Reachability.h */,
+				A78FCE1D14DA12D200D5CCE3 /* Reachability.m */,
+				A78FCE2114DA12EB00D5CCE3 /* ASICacheDelegate.h */,
+				A78FCE2214DA12EB00D5CCE3 /* ASIDataCompressor.h */,
+				A78FCE2314DA12EB00D5CCE3 /* ASIDataCompressor.m */,
+				A78FCE2414DA12EB00D5CCE3 /* ASIDataDecompressor.h */,
+				A78FCE2514DA12EB00D5CCE3 /* ASIDataDecompressor.m */,
+				A78FCE2614DA12EB00D5CCE3 /* ASIDownloadCache.h */,
+				A78FCE2714DA12EB00D5CCE3 /* ASIDownloadCache.m */,
+				A78FCE2814DA12EB00D5CCE3 /* ASIFormDataRequest.h */,
+				A78FCE2914DA12EB00D5CCE3 /* ASIFormDataRequest.m */,
+				A78FCE2A14DA12EB00D5CCE3 /* ASIHTTPRequest.h */,
+				A78FCE2B14DA12EB00D5CCE3 /* ASIHTTPRequest.m */,
+				A78FCE2C14DA12EB00D5CCE3 /* ASIHTTPRequestConfig.h */,
+				A78FCE2D14DA12EB00D5CCE3 /* ASIHTTPRequestDelegate.h */,
+				A78FCE2E14DA12EB00D5CCE3 /* ASIInputStream.h */,
+				A78FCE2F14DA12EB00D5CCE3 /* ASIInputStream.m */,
+				A78FCDDD14D9C28800D5CCE3 /* MobileAvionicsWeather-Info.plist */,
+				A78FCDDE14D9C28800D5CCE3 /* InfoPlist.strings */,
+				A78FCDE114D9C28800D5CCE3 /* main.m */,
+				A78FCDE314D9C28800D5CCE3 /* MobileAvionicsWeather-Prefix.pch */,
+				A78FCE3014DA12EB00D5CCE3 /* ASINetworkQueue.h */,
+				A78FCE3114DA12EB00D5CCE3 /* ASINetworkQueue.m */,
+				A78FCE3214DA12EB00D5CCE3 /* ASIProgressDelegate.h */,
+				A78FCE3614DA12EB00D5CCE3 /* CloudFiles */,
+				A78FCE4514DA12EB00D5CCE3 /* S3 */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A78FCDF914D9C28900D5CCE3 /* MobileAvionicsWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCDFF14D9C28900D5CCE3 /* MobileAvionicsWeatherTests.h */,
+				A78FCE0014D9C28900D5CCE3 /* MobileAvionicsWeatherTests.m */,
+				A78FCDFA14D9C28900D5CCE3 /* Supporting Files */,
+			);
+			path = MobileAvionicsWeatherTests;
+			sourceTree = "<group>";
+		};
+		A78FCDFA14D9C28900D5CCE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCDFB14D9C28900D5CCE3 /* MobileAvionicsWeatherTests-Info.plist */,
+				A78FCDFC14D9C28900D5CCE3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A78FCE3614DA12EB00D5CCE3 /* CloudFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCE3714DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.h */,
+				A78FCE3814DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.m */,
+				A78FCE3914DA12EB00D5CCE3 /* ASICloudFilesContainer.h */,
+				A78FCE3A14DA12EB00D5CCE3 /* ASICloudFilesContainer.m */,
+				A78FCE3B14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.h */,
+				A78FCE3C14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.m */,
+				A78FCE3D14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.h */,
+				A78FCE3E14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.m */,
+				A78FCE3F14DA12EB00D5CCE3 /* ASICloudFilesObject.h */,
+				A78FCE4014DA12EB00D5CCE3 /* ASICloudFilesObject.m */,
+				A78FCE4114DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.h */,
+				A78FCE4214DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.m */,
+				A78FCE4314DA12EB00D5CCE3 /* ASICloudFilesRequest.h */,
+				A78FCE4414DA12EB00D5CCE3 /* ASICloudFilesRequest.m */,
+			);
+			path = CloudFiles;
+			sourceTree = "<group>";
+		};
+		A78FCE4514DA12EB00D5CCE3 /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				A78FCE4614DA12EB00D5CCE3 /* ASINSXMLParserCompat.h */,
+				A78FCE4714DA12EB00D5CCE3 /* ASIS3Bucket.h */,
+				A78FCE4814DA12EB00D5CCE3 /* ASIS3Bucket.m */,
+				A78FCE4914DA12EB00D5CCE3 /* ASIS3BucketObject.h */,
+				A78FCE4A14DA12EB00D5CCE3 /* ASIS3BucketObject.m */,
+				A78FCE4B14DA12EB00D5CCE3 /* ASIS3BucketRequest.h */,
+				A78FCE4C14DA12EB00D5CCE3 /* ASIS3BucketRequest.m */,
+				A78FCE4D14DA12EB00D5CCE3 /* ASIS3ObjectRequest.h */,
+				A78FCE4E14DA12EB00D5CCE3 /* ASIS3ObjectRequest.m */,
+				A78FCE4F14DA12EB00D5CCE3 /* ASIS3Request.h */,
+				A78FCE5014DA12EB00D5CCE3 /* ASIS3Request.m */,
+				A78FCE5114DA12EB00D5CCE3 /* ASIS3ServiceRequest.h */,
+				A78FCE5214DA12EB00D5CCE3 /* ASIS3ServiceRequest.m */,
+			);
+			path = S3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A78FCDD014D9C28800D5CCE3 /* MobileAvionicsWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A78FCE0414D9C28900D5CCE3 /* Build configuration list for PBXNativeTarget "MobileAvionicsWeather" */;
+			buildPhases = (
+				A78FCDCD14D9C28800D5CCE3 /* Sources */,
+				A78FCDCE14D9C28800D5CCE3 /* Frameworks */,
+				A78FCDCF14D9C28800D5CCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileAvionicsWeather;
+			productName = MobileAvionicsWeather;
+			productReference = A78FCDD114D9C28800D5CCE3 /* MobileAvionicsWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A78FCDF114D9C28900D5CCE3 /* MobileAvionicsWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A78FCE0714D9C28900D5CCE3 /* Build configuration list for PBXNativeTarget "MobileAvionicsWeatherTests" */;
+			buildPhases = (
+				A78FCDED14D9C28900D5CCE3 /* Sources */,
+				A78FCDEE14D9C28900D5CCE3 /* Frameworks */,
+				A78FCDEF14D9C28900D5CCE3 /* Resources */,
+				A78FCDF014D9C28900D5CCE3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A78FCDF814D9C28900D5CCE3 /* PBXTargetDependency */,
+			);
+			name = MobileAvionicsWeatherTests;
+			productName = MobileAvionicsWeatherTests;
+			productReference = A78FCDF214D9C28900D5CCE3 /* MobileAvionicsWeatherTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A78FCDC814D9C28800D5CCE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A78FCDCB14D9C28800D5CCE3 /* Build configuration list for PBXProject "MobileAvionicsWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A78FCDC614D9C28800D5CCE3;
+			productRefGroup = A78FCDD214D9C28800D5CCE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A78FCDD014D9C28800D5CCE3 /* MobileAvionicsWeather */,
+				A78FCDF114D9C28900D5CCE3 /* MobileAvionicsWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A78FCDCF14D9C28800D5CCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78FCDE014D9C28800D5CCE3 /* InfoPlist.strings in Resources */,
+				A78FCDE914D9C28800D5CCE3 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78FCDEF14D9C28900D5CCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78FCDFE14D9C28900D5CCE3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A78FCDF014D9C28900D5CCE3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A78FCDCD14D9C28800D5CCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78FCDE214D9C28800D5CCE3 /* main.m in Sources */,
+				A78FCDE614D9C28800D5CCE3 /* AppDelegate.m in Sources */,
+				A78FCDEC14D9C28800D5CCE3 /* ViewController.m in Sources */,
+				A78FCE0C14D9C2F900D5CCE3 /* GpsData.m in Sources */,
+				A78FCE1114D9E44300D5CCE3 /* RestRequest.m in Sources */,
+				A78FCE1E14DA12D200D5CCE3 /* Reachability.m in Sources */,
+				A78FCE7114DA12EB00D5CCE3 /* ASIAuthenticationDialog.m in Sources */,
+				A78FCE7214DA12EB00D5CCE3 /* ASIDataCompressor.m in Sources */,
+				A78FCE7314DA12EB00D5CCE3 /* ASIDataDecompressor.m in Sources */,
+				A78FCE7414DA12EB00D5CCE3 /* ASIDownloadCache.m in Sources */,
+				A78FCE7514DA12EB00D5CCE3 /* ASIFormDataRequest.m in Sources */,
+				A78FCE7614DA12EB00D5CCE3 /* ASIHTTPRequest.m in Sources */,
+				A78FCE7714DA12EB00D5CCE3 /* ASIInputStream.m in Sources */,
+				A78FCE7814DA12EB00D5CCE3 /* ASINetworkQueue.m in Sources */,
+				A78FCE7A14DA12EB00D5CCE3 /* ASICloudFilesCDNRequest.m in Sources */,
+				A78FCE7B14DA12EB00D5CCE3 /* ASICloudFilesContainer.m in Sources */,
+				A78FCE7C14DA12EB00D5CCE3 /* ASICloudFilesContainerRequest.m in Sources */,
+				A78FCE7D14DA12EB00D5CCE3 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
+				A78FCE7E14DA12EB00D5CCE3 /* ASICloudFilesObject.m in Sources */,
+				A78FCE7F14DA12EB00D5CCE3 /* ASICloudFilesObjectRequest.m in Sources */,
+				A78FCE8014DA12EB00D5CCE3 /* ASICloudFilesRequest.m in Sources */,
+				A78FCE8114DA12EB00D5CCE3 /* ASIS3Bucket.m in Sources */,
+				A78FCE8214DA12EB00D5CCE3 /* ASIS3BucketObject.m in Sources */,
+				A78FCE8314DA12EB00D5CCE3 /* ASIS3BucketRequest.m in Sources */,
+				A78FCE8414DA12EB00D5CCE3 /* ASIS3ObjectRequest.m in Sources */,
+				A78FCE8514DA12EB00D5CCE3 /* ASIS3Request.m in Sources */,
+				A78FCE8614DA12EB00D5CCE3 /* ASIS3ServiceRequest.m in Sources */,
+				A725709B14DA18A20042C8F0 /* weatherParse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78FCDED14D9C28900D5CCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78FCE0114D9C28900D5CCE3 /* MobileAvionicsWeatherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A78FCDF814D9C28900D5CCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A78FCDD014D9C28800D5CCE3 /* MobileAvionicsWeather */;
+			targetProxy = A78FCDF714D9C28900D5CCE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A78FCDDE14D9C28800D5CCE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78FCDDF14D9C28800D5CCE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A78FCDE714D9C28800D5CCE3 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78FCDE814D9C28800D5CCE3 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A78FCDFC14D9C28900D5CCE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78FCDFD14D9C28900D5CCE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A78FCE0214D9C28900D5CCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A78FCE0314D9C28900D5CCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A78FCE0514D9C28900D5CCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileAvionicsWeather/MobileAvionicsWeather-Prefix.pch";
+				INFOPLIST_FILE = "MobileAvionicsWeather/MobileAvionicsWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A78FCE0614D9C28900D5CCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileAvionicsWeather/MobileAvionicsWeather-Prefix.pch";
+				INFOPLIST_FILE = "MobileAvionicsWeather/MobileAvionicsWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A78FCE0814D9C28900D5CCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MobileAvionicsWeather.app/MobileAvionicsWeather";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileAvionicsWeather/MobileAvionicsWeather-Prefix.pch";
+				INFOPLIST_FILE = "MobileAvionicsWeatherTests/MobileAvionicsWeatherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A78FCE0914D9C28900D5CCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MobileAvionicsWeather.app/MobileAvionicsWeather";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileAvionicsWeather/MobileAvionicsWeather-Prefix.pch";
+				INFOPLIST_FILE = "MobileAvionicsWeatherTests/MobileAvionicsWeatherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A78FCDCB14D9C28800D5CCE3 /* Build configuration list for PBXProject "MobileAvionicsWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78FCE0214D9C28900D5CCE3 /* Debug */,
+				A78FCE0314D9C28900D5CCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A78FCE0414D9C28900D5CCE3 /* Build configuration list for PBXNativeTarget "MobileAvionicsWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78FCE0514D9C28900D5CCE3 /* Debug */,
+				A78FCE0614D9C28900D5CCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A78FCE0714D9C28900D5CCE3 /* Build configuration list for PBXNativeTarget "MobileAvionicsWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78FCE0814D9C28900D5CCE3 /* Debug */,
+				A78FCE0914D9C28900D5CCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A78FCDC814D9C28800D5CCE3 /* Project object */;
+}
