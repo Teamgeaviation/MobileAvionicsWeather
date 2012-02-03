@@ -25,7 +25,7 @@
 -(NSString *)noaaRequest: (NSString *) temp :(NSString *) temp1
 {
     NSString *final = [[NSString alloc] init];
-    final = [NSString stringWithFormat:@"http://forecast.weather.gov/MapClick.php?lat=42.73600&lon=-84.48430&FcstType=dwml",temp,temp1];
+    final = [NSString stringWithFormat:@"http://forecast.weather.gov/MapClick.php?lat=%@&lon=%@&FcstType=dwml",temp,temp1];
     NSURL *finalUrl = [NSURL URLWithString:final];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:finalUrl];
     [request startSynchronous];
