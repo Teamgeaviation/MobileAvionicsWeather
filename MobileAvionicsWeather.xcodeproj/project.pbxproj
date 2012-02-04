@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FB4337B14DCB456009B6965 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4337A14DCB456009B6965 /* Settings.bundle */; };
 		A725709B14DA18A20042C8F0 /* weatherParse.m in Sources */ = {isa = PBXBuildFile; fileRef = A725709A14DA18A20042C8F0 /* weatherParse.m */; };
 		A78FCDD614D9C28800D5CCE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD514D9C28800D5CCE3 /* UIKit.framework */; };
 		A78FCDD814D9C28800D5CCE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FCDD714D9C28800D5CCE3 /* Foundation.framework */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8FB4337A14DCB456009B6965 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		A725709914DA18A20042C8F0 /* weatherParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weatherParse.h; sourceTree = "<group>"; };
 		A725709A14DA18A20042C8F0 /* weatherParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weatherParse.m; sourceTree = "<group>"; };
 		A78FCDD114D9C28800D5CCE3 /* MobileAvionicsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAvionicsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +216,7 @@
 				A78FCDE414D9C28800D5CCE3 /* AppDelegate.h */,
 				A78FCDE514D9C28800D5CCE3 /* AppDelegate.m */,
 				A78FCDE714D9C28800D5CCE3 /* MainStoryboard.storyboard */,
+				8FB4337A14DCB456009B6965 /* Settings.bundle */,
 				A78FCDEA14D9C28800D5CCE3 /* ViewController.h */,
 				A78FCDEB14D9C28800D5CCE3 /* ViewController.m */,
 				A725709914DA18A20042C8F0 /* weatherParse.h */,
@@ -394,6 +397,7 @@
 			files = (
 				A78FCDE014D9C28800D5CCE3 /* InfoPlist.strings in Resources */,
 				A78FCDE914D9C28800D5CCE3 /* MainStoryboard.storyboard in Resources */,
+				8FB4337B14DCB456009B6965 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

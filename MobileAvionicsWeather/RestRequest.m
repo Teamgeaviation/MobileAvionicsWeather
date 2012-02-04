@@ -33,7 +33,7 @@
     if(!error)
     {
         finalData = [request responseString];
-       // NSLog(finalData);
+        //NSLog(@"Longitude: %@ and Latitude: %@",temp, temp1);
     }
     
     return finalData;

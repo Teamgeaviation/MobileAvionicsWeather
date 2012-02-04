@@ -45,17 +45,17 @@
 
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
 {
-    //NSLog(@"Parse error occured %@", parseError);
+    NSLog(@"Parse error occured %@", parseError);
 }
 
 -(void)parserDidStartDocument:(NSXMLParser *)parser
 {
-   // NSLog(@"Did Start Document");
+    NSLog(@"Did Start Document");
 }
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser
 {
-   // NSLog(@"Did End Document");
+    NSLog(@"Did End Document");
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
